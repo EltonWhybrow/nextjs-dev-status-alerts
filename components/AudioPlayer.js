@@ -35,7 +35,7 @@ const AudioPlayer = ({ src, post }) => {
                     }}>
                     <audio ref={audioRef} src={src} />
                     {/* <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'}</button> */}
-                    <div className='py-2 mx-auto my-1 flex justify-center cursor'>
+                    <div className='py-2 mx-auto my-1 flex justify-center cursor z-50'>
                         <Image onClick={togglePlay} src={post.data.img} alt={post.data.title} width={200} height={230} className='h-full' />
                     </div>
                 </motion.div>
