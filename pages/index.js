@@ -7,23 +7,32 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import AudioPlayer from '../components/AudioPlayer';
 
 export default function Index({ posts, globalData }) {
+
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
-        </h1>
-        <ul className="w-full">
+        </h1> */}
+        <ul className="w-full grid grid-cols-2 lg:grid-cols-3 gap-3">
           {posts.map((post) => (
             <li
               key={post.filePath}
-              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
+              className="rounded-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 z-50 cursor-pointer"
             >
-              <Link
+
+
+              <AudioPlayer src={post.data.audio} post={post} />
+
+
+              {/* <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                 href={`/posts/[slug]`}
               >
@@ -33,7 +42,7 @@ export default function Index({ posts, globalData }) {
                       {post.data.date}
                     </p>
                   )}
-                  <h2 className="text-2xl md:text-3xl">{post.data.title}</h2>
+                  <h2 className="text-center mx-auto text-2xl md:text-3xl">{post.data.title}</h2>
                   {post.data.description && (
                     <p className="mt-3 text-lg opacity-60">
                       {post.data.description}
@@ -41,7 +50,7 @@ export default function Index({ posts, globalData }) {
                   )}
                   <ArrowIcon className="mt-4" />
                 </a>
-              </Link>
+              </Link> */}
             </li>
           ))}
         </ul>
