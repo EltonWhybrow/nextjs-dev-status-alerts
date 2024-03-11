@@ -20,7 +20,7 @@ const AudioPlayer = ({ src, post }) => {
         <>
             <motion.div
                 whileHover={{
-                    scale: 1.3, // Scale up to 1.5 on hover
+                    scale: 1.2, // Scale up to 1.5 on hover
                     rotate: 360, // Rotate 360 degrees on hover
                     transition: { duration: .4 }, // Transition duration of 2 seconds
                 }}
