@@ -15,3 +15,47 @@ h6 {
 body {
   font-family: var(--font-secondary);
 }
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -5%;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: -3%;
+  }
+}
+
+.trump-mouth {
+  bottom: 0%;
+  left: 41%;
+}
+
+.trump-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.bruce-mouth {
+  bottom: 0%;
+  left: 34.4%;
+}
+
+.bruce-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.donnie-mouth {
+  bottom: 0%;
+  left: 45.4%;
+}
+
+.donnie-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
