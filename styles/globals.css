@@ -14,6 +14,11 @@ h6 {
 
 body {
   font-family: var(--font-secondary);
+  background-image: url(/siren.webp);
+  background-repeat: repeat-x;
+  background-position: -5% bottom;
+  background-size: 15%;
+
 }
 
 @keyframes MoveUpDown {
