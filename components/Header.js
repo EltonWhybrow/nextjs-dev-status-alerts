@@ -7,7 +7,7 @@ export default function Header({ name }) {
 
       <p className="text-2xl dark:text-white text-center">
         <Link href="/">
-          <a> <Image src="/alerts.webp" alt="alert" height="135" width="445" /></a>
+          <a> <Image src="/alerts.webp" alt="alert" height="98" width="339" /></a>
         </Link>
       </p>
     </header>
