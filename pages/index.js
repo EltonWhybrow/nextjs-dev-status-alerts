@@ -21,11 +21,11 @@ export default function Index({ posts, globalData }) {
         {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1> */}
-        <ul className="w-full grid grid-cols-2 lg:grid-cols-3 gap-3">
+        <ul className="w-full grid grid-cols-2 md:grid-cols-3 gap-3">
           {posts.map((post) => (
             <li
               key={post.filePath}
-              className="rounded-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 z-50 cursor-pointer"
+              className="relative rounded-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 z-50 cursor-pointer"
             >
 
 

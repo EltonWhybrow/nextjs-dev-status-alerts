@@ -22,6 +22,7 @@ const AudioPlayer = ({ src, post }) => {
 
     return (
         <>
+            {/* <a href="#video" onclick="scrollToVideo()">Play Video</a> */}
             <motion.div
                 initial={{ scale: .9 }}
                 whileHover={{
@@ -45,12 +46,13 @@ const AudioPlayer = ({ src, post }) => {
                 >
                     <audio ref={audioRef} src={src} />
                     {/* <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'}</button> */}
-                    <div className=' relative py-2 mx-auto my-1 flex justify-center cursor z-50'>
+                    <div className='py-2 mx-auto my-1 flex justify-center cursor z-50'>
                         <Image onClick={togglePlay} src={post.data.img} alt={post.data.title} width={200} height={230} className='h-full' />
-                        <div className={isPlaying ? `absolute ${post.data.title}-mouth move` : `absolute ${post.data.title}-mouth`}>
-                            <Image src={post.data.mouth} alt="mouth" width={94} height={66} className='h-full' />
 
-                        </div>
+                    </div>
+                    <div className={isPlaying ? `absolute ${post.data.title}-mouth move` : `absolute ${post.data.title}-mouth`}>
+                        <Image src={post.data.mouth} alt="mouth" width={94} height={66} className='h-full' />
+
                     </div>
                 </motion.div>
             </motion.div>

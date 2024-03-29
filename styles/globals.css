@@ -25,6 +25,15 @@ body {
   }
 }
 
+@keyframes ChewyMoveUpDown {
+  0%, 100% {
+    bottom: 24.5%;
+  }
+  50% {
+    bottom: 17%;
+  }
+}
+
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0%;
@@ -36,7 +45,7 @@ body {
 
 .trump-mouth {
   bottom: 0%;
-  left: 41%;
+  left: 33.5%;
 }
 
 .trump-mouth.move {
@@ -44,7 +53,7 @@ body {
 }
 .bruce-mouth {
   bottom: 0%;
-  left: 34.4%;
+  left: 21.4%;
 }
 
 .bruce-mouth.move {
@@ -56,6 +65,155 @@ body {
 }
 
 .donnie-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.gay2-mouth {
+  bottom: -.5%;
+  left: 23.4%;
+}
+
+.gay2-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.gay-mouth {
+  bottom: 1.5%;
+  left: 28.4%;
+}
+
+.gay-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.wonka-mouth {
+  bottom: -1.5%;
+  left: 20.8%;
+}
+
+.wonka-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+
+.romeo-mouth {
+  bottom: 0%;
+  left: 30%;
+}
+
+.romeo-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+/* CRUSTY */
+@keyframes CrustyMoveUpDown {
+  0%, 100% {
+    bottom: 6%;
+  }
+  50% {
+    bottom: 3%;
+  }
+}
+.crusty-mouth {
+  bottom: 6%;
+  left: 27.4%;
+}
+
+.crusty-mouth.move {
+  animation: CrustyMoveUpDown .3s linear infinite;
+}
+
+/* TUCKER */
+@keyframes TuckerMoveUpDown {
+  0%, 100% {
+    bottom: 9.5%;
+  }
+  40% {
+    bottom: 4%;
+  }
+  70% {
+    bottom: 4%;
+  }
+}
+.tucker-mouth {
+  bottom: 9.5%;
+  left: 57.1%;
+}
+
+.tucker-mouth.move {
+  animation: TuckerMoveUpDown 1.5s linear 1;
+}
+
+/* IGOR */
+@keyframes IgorMoveUpDown {
+  0%, 100% {
+    bottom: 14%;
+  }
+  50% {
+    bottom: 12%;
+  }
+}
+
+.igor-mouth {
+  bottom: 14%;
+  left: 44.4%;
+}
+
+.igor-mouth.move {
+  animation: IgorMoveUpDown .3s linear infinite;
+}
+
+/* CHEWY */
+@keyframes ChewyMoveUpDown {
+  0%, 100% {
+    bottom: 17.5%;
+  }
+  50% {
+    bottom: 13%;
+  }
+}
+
+.chewbacca-mouth {
+  bottom: 17.5%;
+  left: 28.4%;
+}
+
+.chewbacca-mouth.move {
+  animation: ChewyMoveUpDown .9s linear 2;
+}
+
+/* STING */
+@keyframes StingMoveUpDown {
+  0%, 100% {
+    visibility: visible;
+    transform: scale(1);
+   
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+.sting-mouth {
+  visibility: hidden;;
+  bottom: 11%;
+  left: 62%;
+}
+
+.sting-mouth.move {
+  animation: StingMoveUpDown .5s linear infinite;
+}
+.gene-wilder-mouth {
+  bottom: 2%;
+  left: 40.5%;
+}
+
+.gene-wilder-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.borat-mouth {
+  bottom: 0%;
+  left: 32.8%;
+}
+
+.borat-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 
