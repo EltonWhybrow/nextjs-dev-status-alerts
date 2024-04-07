@@ -23,16 +23,16 @@ body {
 
 @keyframes MoveUpDown {
   0%, 100% {
-    bottom: 0%;
+    bottom: 3%;
   }
   50% {
-    bottom: -5%;
+    bottom: 1%;
   }
 }
 
 @keyframes ChewyMoveUpDown {
   0%, 100% {
-    bottom: 24.5%;
+    bottom: 3%;
   }
   50% {
     bottom: 17%;
@@ -41,40 +41,38 @@ body {
 
 @keyframes MoveUpDown {
   0%, 100% {
-    bottom: 0%;
+    bottom: 3%;
   }
   50% {
-    bottom: -3%;
+    bottom: 0%;
   }
 }
 
 .trump-mouth {
-  bottom: 0%;
-  left: 33.5%;
+  bottom: 3%;
+ 
 }
 
 .trump-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 .bruce-mouth {
-  bottom: 0%;
-  left: 21.4%;
+  bottom: 3%;
+
 }
 
 .bruce-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 .donnie-mouth {
-  bottom: 0%;
-  left: 45.4%;
+  bottom: 3%;
 }
 
 .donnie-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 .gay2-mouth {
-  bottom: -.5%;
-  left: 23.4%;
+  bottom: 3%;
 }
 
 .gay2-mouth.move {
@@ -82,16 +80,14 @@ body {
 }
 
 .gay-mouth {
-  bottom: 1.5%;
-  left: 28.4%;
+  bottom: 3%;
 }
 
 .gay-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 .wonka-mouth {
-  bottom: -1.5%;
-  left: 20%;
+  bottom: 3%;
 }
 
 .wonka-mouth.move {
@@ -100,8 +96,7 @@ body {
 
 
 .romeo-mouth {
-  bottom: 0%;
-  left: 30%;
+  bottom: 3%;
 }
 
 .romeo-mouth.move {
@@ -111,15 +106,14 @@ body {
 /* CRUSTY */
 @keyframes CrustyMoveUpDown {
   0%, 100% {
-    bottom: 6%;
+    bottom: 3%;
   }
   50% {
-    bottom: 3%;
+    bottom: 2%;
   }
 }
 .crusty-mouth {
-  bottom: 6%;
-  left: 27.4%;
+  bottom: 3%;
 }
 
 .crusty-mouth.move {
@@ -129,18 +123,17 @@ body {
 /* TUCKER */
 @keyframes TuckerMoveUpDown {
   0%, 100% {
-    bottom: 9.5%;
+    bottom: 3%;
   }
   40% {
-    bottom: 4%;
+    bottom: -2%;
   }
   70% {
-    bottom: 4%;
+    bottom: -2%;
   }
 }
 .tucker-mouth {
-  bottom: 9.5%;
-  left: 57.1%;
+  bottom: 3%;
 }
 
 .tucker-mouth.move {
@@ -150,16 +143,15 @@ body {
 /* IGOR */
 @keyframes IgorMoveUpDown {
   0%, 100% {
-    bottom: 14%;
+    bottom: 3%;
   }
   50% {
-    bottom: 12%;
+    bottom: .5%;
   }
 }
 
 .igor-mouth {
-  bottom: 14%;
-  left: 44.4%;
+  bottom: 3%;
 }
 
 .igor-mouth.move {
@@ -169,16 +161,15 @@ body {
 /* CHEWY */
 @keyframes ChewyMoveUpDown {
   0%, 100% {
-    bottom: 17.5%;
+    bottom: 3%;
   }
   50% {
-    bottom: 13%;
+    bottom: 0%;
   }
 }
 
 .chewbacca-mouth {
-  bottom: 17.5%;
-  left: 28.4%;
+  bottom: 5%;
 }
 
 .chewbacca-mouth.move {
@@ -188,34 +179,29 @@ body {
 /* STING */
 @keyframes StingMoveUpDown {
   0%, 100% {
-    visibility: visible;
-    transform: scale(1);
-   
+    opacity: .1; 
   }
   50% {
-    transform: scale(1.4);
+    opacity: 1;
   }
 }
 .sting-mouth {
-  visibility: hidden;;
-  bottom: 11%;
-  left: 62%;
+  opacity: 0.1;
+  bottom: 3%;
 }
 
 .sting-mouth.move {
   animation: StingMoveUpDown .5s linear infinite;
 }
 .gene-wilder-mouth {
-  bottom: 2%;
-  left: 40.5%;
+  bottom: 3%;
 }
 
 .gene-wilder-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 .borat-mouth {
-  bottom: 0%;
-  left: 32.8%;
+  bottom: 3%;
 }
 
 .borat-mouth.move {

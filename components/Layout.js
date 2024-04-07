@@ -50,7 +50,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="relative pb-24 overflow-hidden">
+    <div className="relative pb-0 overflow-hidden">
       <div className="flex flex-col items-center max-w-4xl w-full mx-auto">
         {children}
       </div>
