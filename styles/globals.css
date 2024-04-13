@@ -94,6 +94,14 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
+.badonde-mouth {
+  bottom: 3%;
+}
+
+.badonde-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
 
 .romeo-mouth {
   bottom: 3%;
@@ -208,3 +216,30 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
+ .light-flash {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 33.5%;
+  top: 25%;
+
+
+}
+
+.animate-spin {
+  animation: spin 1s ease-out infinite;
+} 
+
+/* .animate-three {
+  animation: spin 1s ease-out infinite;
+}  */
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }  
+  to {
+    transform: rotate(360deg);
+  }  
+}  

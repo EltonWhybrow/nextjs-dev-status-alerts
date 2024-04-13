@@ -5,11 +5,14 @@ export default function Header({ name }) {
   return (
     <header className="py-10">
 
-      <p className="text-2xl dark:text-white text-center">
-        <Link href="/">
-          <a> <Image src="/alerts.webp" alt="alert" height="98" width="339" /></a>
-        </Link>
-      </p>
+      <div className="text-2xl dark:text-white text-center">
+        <div className='relative group'>
+          <Image src="/alerts.webp" alt="alert" height="98" width="339" />
+          <div className='light-flash group-hover:animate-spin origin-center'>
+            <Image src="/flash.png" alt="flash" height="29" width="29" />
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
