@@ -102,6 +102,30 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
+.meerkat-mouth {
+  bottom: 3%;
+}
+
+.meerkat-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.ainsley-mouth {
+  bottom: 3%;
+}
+
+.ainsley-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.soprano-mouth {
+  bottom: 3%;
+}
+
+.soprano-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
 
 .romeo-mouth {
   bottom: 3%;
