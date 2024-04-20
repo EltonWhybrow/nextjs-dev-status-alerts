@@ -10,8 +10,22 @@ import SEO from '../components/SEO';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import AudioPlayer from '../components/AudioPlayer';
+import { motion, stagger } from 'framer-motion';
 
 export default function Index({ posts, globalData }) {
+
+  const container = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.9,
+        delayChildren: 0.5 * i,
+      },
+    }),
+  };
 
   return (
     <Layout>
@@ -21,15 +35,16 @@ export default function Index({ posts, globalData }) {
         {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1> */}
-        <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-2">
-          {posts.map((post) => (
-            <li
+        <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-2 px-2">
+          {posts.map((post, i) => (
+            <motion.div
+              variants={container}
               key={post.filePath}
               className="w-full relative mx-auto  rounded-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 z-50 cursor-pointer"
             >
 
 
-              <AudioPlayer src={post.data.audio} post={post} />
+              <AudioPlayer index={i} src={post.data.audio} post={post} />
 
 
               {/* <Link
@@ -51,7 +66,7 @@ export default function Index({ posts, globalData }) {
                   <ArrowIcon className="mt-4" />
                 </a>
               </Link> */}
-            </li>
+            </motion.div>
           ))}
         </ul>
       </main>

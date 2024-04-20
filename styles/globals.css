@@ -99,7 +99,16 @@ body {
 }
 
 .badonde-mouth.move {
-  animation: MoveUpDown .3s linear infinite;
+  animation: DondeMoveUpDown .4s linear infinite;
+}
+
+@keyframes DondeMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 0%;
+  }
 }
 
 .meerkat-mouth {
@@ -107,6 +116,14 @@ body {
 }
 
 .meerkat-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.mattDevious-mouth {
+  bottom: 3%;
+}
+
+.mattDevious-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 
