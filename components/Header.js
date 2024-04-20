@@ -40,18 +40,19 @@ export default function Header({ name }) {
       </audio>
 
       <div className="text-center">
-        <div id="play" className="relative group block dark:hidden">
-          <Image src="/alerts-dark.webp" alt="alert" height="98" width="339" />
-          <div className="light-flash group-hover:animate-spin origin-center">
-            <Image src="/flash.png" alt="flash" height="29" width="29" />
-          </div>
-        </div>
         <div id="play" className="relative group hidden dark:block">
           <Image src="/alerts.webp" alt="alert" height="98" width="339" />
           <div className="light-flash group-hover:animate-spin origin-center">
             <Image src="/flash.png" alt="flash" height="29" width="29" />
           </div>
         </div>
+        <div id="play" className="relative group block dark:hidden">
+          <Image src="/alerts-dark.webp" alt="alert" height="98" width="339" />
+          <div className="light-flash group-hover:animate-spin origin-center">
+            <Image src="/flash.png" alt="flash" height="29" width="29" />
+          </div>
+        </div>
+
       </div>
     </header>
   );
