@@ -14,11 +14,35 @@ import { motion, stagger } from 'framer-motion';
 
 export default function Index({ posts, globalData }) {
 
+  const [characters, setCharacters] = useState(posts);
+
+  const filterByCategory = (cat) => {
+    return posts.filter(character => {
+      if (Array.isArray(cat)) {
+        return cat.some(c => character.data.category.includes(c));
+      } else {
+        return character.data.category.includes(cat);
+      }
+    });
+  };
+
+  const handleFilterChange = (newCat) => {
+    const filteredCharacters = filterByCategory(newCat);
+    setCharacters(filteredCharacters);
+  };
+  const resetFilter = () => {
+    setCharacters(posts);
+  };
+
+  console.log(">>> characters", characters);
+
+
   const container = {
     hidden: {
       opacity: 0,
     },
-    visible: (i = 1) => ({
+
+    visible: (i) => ({
       opacity: 1,
       transition: {
         staggerChildren: 0.9,
@@ -35,8 +59,26 @@ export default function Index({ posts, globalData }) {
         {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1> */}
+        <div className='flex justify-center align-middle'>
+          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => resetFilter()}>All</button>
+          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("meeting")}>Meeting</button>
+          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("project")}>Project</button>
+
+          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("testing")}>Testing</button>
+          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("misc")}>Misc</button>
+
+
+
+        </div>
+
+
         <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-2 px-2">
-          {posts.map((post, i) => (
+
+          {/* {characters && characters.map(user => (
+            <div key={user.character + 1}>{user.data.category}</div>
+          ))} */}
+
+          {characters && characters.map((post, i) => (
             <motion.div
               variants={container}
               key={post.filePath}
