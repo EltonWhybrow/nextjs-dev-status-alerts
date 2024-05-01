@@ -64,10 +64,46 @@ body {
 .bruce-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
+
+
+.ninja-mouth {
+  bottom: 3%;
+
+}
+
+.ninja-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.jason-lee-mouth {
+  bottom: 3%;
+
+}
+
+.jason-lee-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+.snatcher-mouth {
+  bottom: 3%;
+
+}
+
+.snatcher-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+
+
 .donnie-mouth {
   bottom: 3%;
 }
 
+.bruce-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
+.donnie-mouth {
+  bottom: 3%;
+}
 .donnie-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
