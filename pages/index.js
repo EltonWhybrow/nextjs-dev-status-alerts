@@ -59,13 +59,33 @@ export default function Index({ posts, globalData }) {
         {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1> */}
-        <div className='flex justify-center align-middle'>
-          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => resetFilter()}>All</button>
-          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("meeting")}>Meeting</button>
-          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("project")}>Project</button>
+        <div className='flex flex-wrap justify-center align-middle'>
+          <div className="w-1/2 md:w-auto p-1">
 
-          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("testing")}>Testing</button>
-          <button className="dark:bg-black dark:bg-opacity-30 bg-opacity-10 px-3 py-2 text-slate-100 rounded-lg shadow-md m-2" onClick={() => handleFilterChange("misc")}>Misc</button>
+
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => resetFilter()}>All</button>
+          </div>
+          <div className="w-1/2 md:w-auto p-1">
+
+
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("meeting")}>Meeting</button>
+          </div>
+          <div className="w-1/2 md:w-auto p-1">
+
+
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("project")}>Project</button>
+          </div>
+
+          <div className="w-1/2 md:w-auto p-1">
+
+
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("testing")}>Testing</button>
+          </div>
+          <div className="w-1/2 md:w-auto p-1">
+
+
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("misc")}>Misc</button>
+          </div>
 
 
 
