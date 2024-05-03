@@ -21,36 +21,8 @@ body {
 
 }
 
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 1%;
-  }
-}
-
-@keyframes ChewyMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 17%;
-  }
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 0%;
-  }
-}
-
 .trump-mouth {
   bottom: 3%;
- 
 }
 
 .trump-mouth.move {
@@ -58,26 +30,46 @@ body {
 }
 .bruce-mouth {
   bottom: 3%;
-
 }
 
 .bruce-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 
-
 .ninja-mouth {
   bottom: 3%;
-
 }
 
 .ninja-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+
+.bercow-mouth {
+  bottom: 4%;
+}
+
+.bercow-mouth.move {
+  animation: ShortMoveUpDown .9s linear 2;
+}
+
+.bfg-mouth {
+  bottom: 3%;
+}
+
+.bfg-mouth.move {
+  animation: MoveUpDown .5s linear infinite;
+}
+
+.wallace-mouth {
+  bottom: 3%;
+}
+
+.wallace-mouth.move {
   animation: MoveUpDown .3s linear infinite;
 }
 
 .jason-lee-mouth {
   bottom: 3%;
-
 }
 
 .jason-lee-mouth.move {
@@ -86,13 +78,11 @@ body {
 
 .snatcher-mouth {
   bottom: 3%;
-
 }
 
 .snatcher-mouth.move {
-  animation: MoveUpDown .3s linear infinite;
+  animation: MoveUpDown .5s linear infinite;
 }
-
 
 .donnie-mouth {
   bottom: 3%;
@@ -138,21 +128,12 @@ body {
   animation: DondeMoveUpDown .4s linear infinite;
 }
 
-@keyframes DondeMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 0%;
-  }
-}
-
 .meerkat-mouth {
   bottom: 3%;
 }
 
 .meerkat-mouth.move {
-  animation: MoveUpDown .3s linear infinite;
+  animation: MoveUpDown .5s linear 3;
 }
 
 .mattDevious-mouth {
@@ -160,7 +141,7 @@ body {
 }
 
 .mattDevious-mouth.move {
-  animation: MoveUpDown .3s linear infinite;
+  animation: MoveUpDown .5s linear infinite;
 }
 
 .ainsley-mouth {
@@ -179,7 +160,6 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
-
 .romeo-mouth {
   bottom: 3%;
 }
@@ -188,15 +168,6 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
-/* CRUSTY */
-@keyframes CrustyMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 2%;
-  }
-}
 .crusty-mouth {
   bottom: 3%;
 }
@@ -205,34 +176,12 @@ body {
   animation: CrustyMoveUpDown .3s linear infinite;
 }
 
-/* TUCKER */
-@keyframes TuckerMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  40% {
-    bottom: -2%;
-  }
-  70% {
-    bottom: -2%;
-  }
-}
 .tucker-mouth {
   bottom: 3%;
 }
 
 .tucker-mouth.move {
-  animation: TuckerMoveUpDown 1.5s linear 1;
-}
-
-/* IGOR */
-@keyframes IgorMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: .5%;
-  }
+  animation: OnceMoveUpDown 1.5s linear 1;
 }
 
 .igor-mouth {
@@ -243,33 +192,14 @@ body {
   animation: IgorMoveUpDown .3s linear infinite;
 }
 
-/* CHEWY */
-@keyframes ChewyMoveUpDown {
-  0%, 100% {
-    bottom: 3%;
-  }
-  50% {
-    bottom: 0%;
-  }
-}
-
 .chewbacca-mouth {
   bottom: 5%;
 }
 
 .chewbacca-mouth.move {
-  animation: ChewyMoveUpDown .9s linear 2;
+  animation: ShortMoveUpDown .9s linear 2;
 }
 
-/* STING */
-@keyframes StingMoveUpDown {
-  0%, 100% {
-    opacity: .1; 
-  }
-  50% {
-    opacity: 1;
-  }
-}
 .sting-mouth {
   opacity: 0.1;
   bottom: 3%;
@@ -283,7 +213,7 @@ body {
 }
 
 .gene-wilder-mouth.move {
-  animation: MoveUpDown .3s linear infinite;
+  animation: MoveUpDown .4s linear infinite;
 }
 .borat-mouth {
   bottom: 3%;
@@ -293,24 +223,17 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
- .light-flash {
-  position: absolute;
-  width: 29px;
-  height: 29px;
-  left: 33.5%;
-  top: 25%;
-
-
+.light-flash {
+position: absolute;
+width: 29px;
+height: 29px;
+left: 33.5%;
+top: 25%;
 }
 
 .animate-spin {
   animation: spin 1s ease-out infinite;
-} 
-
-/* .animate-three {
-  animation: spin 1s ease-out infinite;
-}  */
-
+}
 
 @keyframes spin {
   from {
@@ -320,3 +243,76 @@ body {
     transform: rotate(360deg);
   }  
 }  
+@keyframes ShortMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 0%;
+  }
+}
+
+@keyframes StingMoveUpDown {
+  0%, 100% {
+    opacity: .1; 
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes OnceMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  40% {
+    bottom: -2%;
+  }
+  70% {
+    bottom: -2%;
+  }
+}
+
+@keyframes IgorMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: .5%;
+  }
+}
+
+/* @keyframes ShortMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 17%;
+  }
+} */
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 0%;
+  }
+}
+@keyframes DondeMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 0%;
+  }
+}
+
+@keyframes CrustyMoveUpDown {
+  0%, 100% {
+    bottom: 3%;
+  }
+  50% {
+    bottom: 2%;
+  }
+}

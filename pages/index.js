@@ -59,38 +59,25 @@ export default function Index({ posts, globalData }) {
         {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1> */}
-        <div className='flex flex-wrap justify-center align-middle'>
+        <div className='flex flex-wrap justify-center align-middle pb-2'>
+
           <div className="w-1/2 md:w-auto p-1">
-
-
-            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => resetFilter()}>All</button>
-          </div>
-          <div className="w-1/2 md:w-auto p-1">
-
-
             <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("meeting")}>Meeting</button>
           </div>
+
           <div className="w-1/2 md:w-auto p-1">
-
-
-            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("project")}>Project</button>
+            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("work")}>Work</button>
           </div>
 
           <div className="w-1/2 md:w-auto p-1">
-
-
             <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("testing")}>Testing</button>
           </div>
+
           <div className="w-1/2 md:w-auto p-1">
-
-
-            <button className=" w-full  bg-black dark:bg-opacity-60 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md" onClick={() => handleFilterChange("misc")}>Misc</button>
+            <button className=" w-full  text-sm  px-2 py-3 dark:text-slate-100 text-slate-900" onClick={() => resetFilter()}>Reset</button>
           </div>
 
-
-
         </div>
-
 
         <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-2 px-2">
 
