@@ -143,6 +143,35 @@ body {
 .mattDevious-mouth.move {
   animation: MoveUpDown .5s linear infinite;
 }
+.youngguns-mouth {
+  bottom: 3%;
+}
+
+.youngguns-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+.liotta-mouth {
+  bottom: 3%;
+}
+
+.liotta-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+.pesci-mouth {
+  bottom: 3%;
+}
+
+.pesci-mouth.move {
+  animation: MoveUpDown .5s linear infinite;
+}
+
+.taxidriver-mouth {
+  bottom: 3%;
+}
+
+.taxidriver-mouth.move {
+  animation: MoveUpDown .45s linear infinite;
+}
 
 .ainsley-mouth {
   bottom: 3%;

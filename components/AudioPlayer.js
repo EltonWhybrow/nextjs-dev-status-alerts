@@ -11,12 +11,21 @@ const AudioPlayer = ({ src, post, index }) => {
         // if (isPlaying) {
         //     audioRef.current.pause();
         // } else {
-        audioRef.current.play();
-        audioRef.current.onended = function () {
-            setIsPlaying(false);
-        };
-        // }
-        setIsPlaying(!isPlaying);
+        if (src.length > 0) {
+            // Randomly select an item from the src array
+            const randomIndex = Math.floor(Math.random() * src.length);
+            const randomSrc = src[randomIndex];
+
+            // Set the random source to the audio element
+            audioRef.current.src = randomSrc;
+
+            audioRef.current.play();
+            audioRef.current.onended = function () {
+                setIsPlaying(false);
+            };
+            // }
+            setIsPlaying(!isPlaying);
+        }
 
     };
 

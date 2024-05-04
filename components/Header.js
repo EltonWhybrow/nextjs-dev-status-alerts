@@ -54,6 +54,6 @@ export default function Header({ name }) {
         </div>
 
       </div>
-    </header>
+    </header >
   );
 }
