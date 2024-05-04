@@ -34,7 +34,7 @@ export default function Index({ posts, globalData }) {
     setCharacters(posts);
   };
 
-  console.log(">>> characters", characters);
+
 
 
   const container = {
