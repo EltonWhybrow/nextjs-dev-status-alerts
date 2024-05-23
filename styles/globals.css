@@ -52,6 +52,22 @@ body {
   animation: ShortMoveUpDown .9s linear 2;
 }
 
+.alig-mouth {
+  bottom: 4%;
+}
+
+.alig-mouth.move {
+  animation: MoveUpDown .5s linear 3;
+}
+
+.alpacino-mouth {
+  bottom: 3%;
+}
+
+.alpacino-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+
 .bfg-mouth {
   bottom: 3%;
 }
@@ -163,6 +179,30 @@ body {
 
 .pesci-mouth.move {
   animation: MoveUpDown .5s linear infinite;
+}
+
+.sean-paul-mouth {
+  bottom: 4%;
+}
+
+.sean-paul-mouth.move {
+  animation: MoveUpDown .5s linear 3;
+}
+
+.chris-rock-mouth {
+  bottom: 4%;
+}
+
+.chris-rock-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+
+.screwface-mouth {
+  bottom: 4%;
+}
+
+.screwface-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
 }
 
 .taxidriver-mouth {
