@@ -79,7 +79,54 @@ const ThemeSwitcher = () => {
 
 export default function Footer({ copyrightText }) {
   return (
-    <footer className="py-16 flex flex-col items-center">
+    <footer className="py-16 flex flex-col items-center my-32">
+      <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
+        Request a alert!  🚀
+      </h2>
+      <p className="text-sm text-gray-700 dark:text-gray-200 mt-1 mb-10">
+        Send me you requested character and famous quote...
+      </p>
+      <form name="contact" netlify class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96">
+        <div class="mb-4">
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="name">Character</label>
+          <input
+            type="text"
+            name="character"
+            id="character"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="name">Famous quote</label>
+          <input
+            type="text"
+            name="quote"
+            id="quote"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div>
+        {/* <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            required
+          />
+        </div> */}
+        <div class="flex items-center justify-between">
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+
       <ThemeSwitcher />
       {/* <p className="text-white mb-3 opacity-60 bg-red-800 rounded-md px-3 mt-6">
         {copyrightText}
