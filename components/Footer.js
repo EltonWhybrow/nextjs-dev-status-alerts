@@ -100,7 +100,7 @@ export default function Footer({ copyrightText }) {
             type="text"
             name="character"
             id="character"
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
@@ -110,7 +110,7 @@ export default function Footer({ copyrightText }) {
             type="text"
             name="quote"
             id="quote"
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
