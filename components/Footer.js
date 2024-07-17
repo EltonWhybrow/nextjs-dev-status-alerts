@@ -86,7 +86,7 @@ export default function Footer({ copyrightText }) {
       <p className="text-sm text-gray-700 dark:text-gray-200 mt-1 mb-10">
         Send me you requested character and famous quote...
       </p>
-      <form name="contact" class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" netlify>
+      <form name="contact" class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" ethod="POST" data-netlify="true">
         <div class="mb-4">
           <label class="block text-gray-200 text-sm font-bold mb-2" for="name">Character</label>
           <input
