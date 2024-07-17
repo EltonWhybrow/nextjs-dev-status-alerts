@@ -86,9 +86,16 @@ export default function Footer({ copyrightText }) {
       <p className="text-sm text-gray-700 dark:text-gray-200 mt-1 mb-10">
         Send me you requested character and famous quote...
       </p>
-      <form name="contact" class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" ethod="POST" data-netlify="true">
+
+      <form name="contact" class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+        <input type="hidden" name="bot-field" />
+
+
+        <input type="hidden" name="form-name" value="contact" />
+
         <div class="mb-4">
-          <label class="block text-gray-200 text-sm font-bold mb-2" for="name">Character</label>
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="character">Character</label>
           <input
             type="text"
             name="character"
@@ -98,7 +105,7 @@ export default function Footer({ copyrightText }) {
           />
         </div>
         <div class="mb-4">
-          <label class="block text-gray-200 text-sm font-bold mb-2" for="name">Famous quote</label>
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="quote">Famous quote</label>
           <input
             type="text"
             name="quote"
@@ -107,16 +114,7 @@ export default function Footer({ copyrightText }) {
             required
           />
         </div>
-        {/* <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            required
-          />
-        </div> */}
+
         <div class="flex items-center justify-between">
           <button
             type="submit"
@@ -126,6 +124,7 @@ export default function Footer({ copyrightText }) {
           </button>
         </div>
       </form>
+
 
       <ThemeSwitcher />
       {/* <p className="text-white mb-3 opacity-60 bg-red-800 rounded-md px-3 mt-6">
