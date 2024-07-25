@@ -11,6 +11,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import AudioPlayer from '../components/AudioPlayer';
 import { motion, stagger } from 'framer-motion';
+import { FaRedo } from 'react-icons/fa';
 
 export default function Index({ posts, globalData }) {
 
@@ -64,33 +65,37 @@ export default function Index({ posts, globalData }) {
         </h1> */}
         <div className='flex flex-wrap justify-center align-middle pb-2'>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'planning' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("planning")}>@Planning</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 md:rounded-l-lg shadow-md ${activeFilter === 'planning' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("planning")}>@Planning</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'scrum' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("scrum")}>@Scrum</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 shadow-md ${activeFilter === 'scrum' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("scrum")}>@Scrum</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'review' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("review")}>@Review</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 shadow-md ${activeFilter === 'review' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("review")}>@Review</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'retro' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("retro")}>@Retro</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 shadow-md ${activeFilter === 'retro' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("retro")}>@Retro</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'refine' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("refine")}>@Refine</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 shadow-md ${activeFilter === 'refine' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("refine")}>@Refine</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 rounded-lg shadow-md ${activeFilter === 'testing' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("testing")}>@Testing</button>
+          <div className="w-1/2 md:w-auto">
+            <button className={`w-full dark:bg-opacity-60 hover:bg-blue-700 bg-opacity-70 px-3 py-2 text-slate-100 shadow-md ${activeFilter === 'testing' ? 'bg-blue-600' : 'bg-black'}`} onClick={() => handleFilterChange("testing")}>@testing</button>
           </div>
 
-          <div className="w-1/2 md:w-auto p-1">
-            <button className=" w-full  text-sm  px-2 py-3 dark:text-slate-100 text-slate-900" onClick={() => resetFilter()}>Reset</button>
+          <div className="w-full md:w-auto">
+            <button className={`justify-center items-center flex w-full dark:bg-opacity-60 bg-black hover:bg-blue-700 bg-opacity-70 px-3 py-2 h-full leading-7 text-slate-100 md:rounded-r-lg shadow-md`} onClick={() => resetFilter()}><FaRedo /></button>
           </div>
+
+          {/* <div className="w-1/2 md:w-auto p-1">
+            <button className=" w-full  text-sm  px-2 py-3 dark:text-slate-100 text-slate-900" onClick={() => resetFilter()}><FaRedo /></button>
+          </div> */}
 
         </div>
 
