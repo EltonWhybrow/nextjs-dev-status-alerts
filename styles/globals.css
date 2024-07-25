@@ -121,6 +121,45 @@ body {
   animation: MoveUpDown .3s linear infinite;
 }
 
+.brucie-mouth {
+  bottom: 3%;
+}
+
+.coleman-mouth.move {
+  animation: MoveUpDown .5s linear infinite;
+}
+
+.coleman-mouth {
+  bottom: 3%;
+}
+
+.greta-mouth.move {
+  animation: MoveUpDown .5s linear infinite;
+}
+
+.greta-mouth {
+  bottom: 3%;
+}
+
+.leslie-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+
+.leslie-mouth {
+  bottom: 3%;
+}
+
+.brucie-mouth.move {
+  animation: MoveUpDown .4s linear infinite;
+}
+
+.yoda-mouth {
+  bottom: 3%;
+}
+
+.yoda-mouth.move {
+  animation: MoveUpDown .3s linear infinite;
+}
 .gay-mouth {
   bottom: 3%;
 }

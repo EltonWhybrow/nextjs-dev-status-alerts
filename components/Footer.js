@@ -81,44 +81,44 @@ export default function Footer({ copyrightText }) {
   return (
     <footer className="py-16 flex flex-col items-center my-32">
       <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
-        Request a alert!  🚀
+        Alert request!  🚀
       </h2>
       <p className="text-sm text-gray-700 dark:text-gray-200 mt-1 mb-10">
-        Send me you requested character and famous quote...
+        Send in your requested character and quote...
       </p>
 
-      <form name="contact" class="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="contact" className="max-w-lg mx-auto p-4 bg-white/10 opacity-1 shadow-md rounded-lg mb-32 w-96" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
         <input type="hidden" name="bot-field" />
 
 
         <input type="hidden" name="form-name" value="contact" />
 
-        <div class="mb-4">
-          <label class="block text-gray-200 text-sm font-bold mb-2" for="character">Character</label>
+        <div className="mb-4">
+          <label className="block text-gray-200 text-sm font-bold mb-2" for="character">Character</label>
           <input
             type="text"
             name="character"
             id="character"
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
-        <div class="mb-4">
-          <label class="block text-gray-200 text-sm font-bold mb-2" for="quote">Famous quote</label>
+        <div className="mb-4">
+          <label className="block text-gray-200 text-sm font-bold mb-2" for="quote">Famous quote</label>
           <input
             type="text"
             name="quote"
             id="quote"
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
 
-        <div class="flex items-center justify-between">
+        <div className="flex items-center justify-between">
           <button
             type="submit"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Send
           </button>
